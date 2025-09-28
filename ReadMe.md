@@ -36,5 +36,4 @@ TODO - Highlight is a highlighter for comments that contain constructs like TODO
 
 5.  Push -build-       (user menu on the bottom panel)
 6.  Push -write to mk- (user menu on the bottom panel)
-    To run in debug mode,
-7.  click "Run and Debug" on the left panel or 'Ctrl+Shift+D'
+7.  To run in debug mode, click "Run and Debug" on the left panel or 'Ctrl+Shift+D'
