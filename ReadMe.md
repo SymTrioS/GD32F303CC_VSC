@@ -1,21 +1,28 @@
-# GD32F303CC Demo Program of Board Prime-S73P
+# GD32F303CC Demo Program for board Prime-S73P
 
-# Install toolchain and visual studio code:
+Install toolchain and Visual Studio Code:
 
 sudo apt install gcc-arm-none-eabi
+
 sudo apt install openocd
 
 sudo apt-get install wget gpg apt-transport-https
+
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 
 rm -f packages.microsoft.gpg
+
 sudo apt update
+
 sudo apt install code
 
-# Get this program:
+
+Get this program:
+
 1.  git clone https://github.com/SymTrioS/GD32F303CC_VSC.git
 2.  cd GD32F303CC_VSC
 3.  Check files in folders openocd programm: 'scripts/target/gd32f30x.cfg' and 'scripts/interface/cmsis-dap.cfg'
