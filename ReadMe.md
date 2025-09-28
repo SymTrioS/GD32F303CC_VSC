@@ -34,7 +34,7 @@ Command Variable - is a plugin for conveniently working with variables that can 
 Tasks - is a plugin that displays task buttons on the bottom panel of the development window (you'll see what this means a little later);
 TODO - Highlight is a highlighter for comments that contain constructs like TODO or FIXME, which can subsequently generate a list of all the improvements specified in the comments.
 
-5.  Push <build>       (user menu on the bottom panel)
-6.  Push <write to mk> (user menu on the bottom panel)
+5.  Push -build-       (user menu on the bottom panel)
+6.  Push -write to mk- (user menu on the bottom panel)
     To run in debug mode,
 7.  click "Run and Debug" on the left panel or 'Ctrl+Shift+D'
