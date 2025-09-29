@@ -842,14 +842,12 @@ static void system_clock_120m_hxtal(void)
     /* select HXTAL/2 as clock source */
     RCU_CFG0 &= ~(RCU_CFG0_PLLSEL | RCU_CFG0_PREDV0);
     RCU_CFG0 |= (RCU_PLLSRC_HXTAL_IRC48M | RCU_CFG0_PREDV0);
-
-    /* CK_PLL = (CK_HXTAL/2) * 30 = 120 MHz, 10 - for Prime-S73P and 24MHz XTAL */
     RCU_CFG0 &= ~(RCU_CFG0_PLLMF | RCU_CFG0_PLLMF_4 | RCU_CFG0_PLLMF_5);
-#if (defined(PRIME_S73P))
-    /* 10 - for Prime-S73P and 24MHz XTAL */
+#if defined(PRIME_S73P)
+    /* CK_PLL = (CK_HXTAL/2) * 10 = 120 MHz, for Prime-S73P and 24MHz XTAL */
     RCU_CFG0 |= RCU_PLL_MUL10;
 #else
-    /* 30 - for 8MHz XTAL */
+    /* CK_PLL = (CK_HXTAL/2) * 30 = 120 MHz, for 8MHz XTAL */
     RCU_CFG0 |= RCU_PLL_MUL30;
 #endif
 #elif defined(GD32F30X_CL)
