@@ -1,4 +1,4 @@
-<h1 align="center">GD32F303CC Demo Program for board Prime-S73P</h1>
+<h2 align="center">GD32F303CC Demo Project for board Prime-S73P</h2>
 
 ## Install toolchain and Visual Studio Code:
 
